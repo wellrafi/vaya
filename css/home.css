@@ -236,3 +236,111 @@ footer {
     border: 1px solid #D1B6AF;
     background-color: #D1B6AF;
 }
+.time__lists__wrapper {
+    /* display: flex; */
+    flex-wrap: wrap;
+    padding: 27px;
+    padding-top: 25px;
+    margin:0 auto;
+    display: none;
+}
+.time__lists__wrapper .time__item {
+    flex: 0 1 calc(33.33% - 10px);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 8px;
+    background-color: white;
+    border: 1px solid #C2A097;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 5px;
+    cursor: pointer;
+}
+.time__lists__wrapper .active__time__item {
+    background-color: #C2A097;
+    color: white;
+    font-weight: 400;
+}
+.sub__title {
+    font-size: 18px;
+    font-family: "Century Gothic Bold";
+    margin: 15px 0;
+}
+.calendar__wrapper {
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    margin: 0 auto;
+}
+.calendar__btn {
+    cursor: pointer;
+}
+.calendar__box {
+    background: white;
+    width: 100%;
+    padding: 25px 50px;
+    border-radius: 4px;
+}
+.calendar__month__wrapper {
+    display: flex;
+    margin-bottom: 20px;
+}
+.calendar__month__wrapper * {flex: 1};
+.month__name {
+    font-size: 18px;
+    font-family: 'Century Gothic Regular';
+    line-height: 32px;
+    letter-spacing: 2%;
+}
+.days__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-grow: 7;
+    margin: 0 auto;
+    padding: 20px;
+}
+.days__wrapper .day__item {
+    padding: 13px 17px;
+    width: 14%;
+    height: 50px;
+    font-size: 14px;
+    font-family: Lato;
+    flex-grow: 1;
+    text-align: center;
+    cursor: pointer;
+}
+.disable__day {
+    cursor:default !important;
+    opacity: 0.5;
+}
+.active__day {
+    border-radius: 50%;
+    background-color: #D1B6AF;
+    color: white;
+}
+footer .right__side * {
+    display: inline-block;
+}
+.total__price {
+    font-size: 12px;
+    font-weight: 700;
+    color: #D1B6AF;
+}
+.calendar__description__wrapper {
+    padding: 0 30px;
+    padding-top: 50px;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0;
+    /* display: none; */
+}
+
+.show__package {
+    display: block !important;
+}
+
+#duo,
+#enkei,
+#opeenvolgend {display: none;}
