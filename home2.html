@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaya Message</title>
+</head>
+<link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<link rel="stylesheet" href="./fonts/style.css">
+<link rel="stylesheet" href="./css/home.css">
+<body style="background-color: #f4f4f4;">
+    <div class="header__section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-1">
+                    <img src="./images/logo.png" alt="" class="logo">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-11 text-end" id="right__side">
+                    <div class="btn__header price__value">€XX,XX</div>
+                    <div class="btn__header btn__login">LOG IN</div>
+                    <div class="btn__header btn__signup">SIGN UP</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="web__contents">
+
+        <div class="bg"></div>
+        
+        <div class="container container__contents">
+    
+            <div class="row">
+                <div class="col-lg-7 col-md-7 col-sm-12">
+                    
+                    <div class="personal__input__wrapper">
+                        <div class="timeline__wrapper">
+                            <div class="item timeline__item">
+                                <div class="circle"></div>
+                                <div class="timeline__text__wrapper">
+                                    <div class="timeline__title">Details</div>
+                                    <div class="timeline__subtitle">Een overzicth</div>
+                                </div>
+                            </div>
+                            <div class="item timeline__line"></div>
+                            <div class="item timeline__item active__timeline">
+                                <div class="circle active"></div>
+                                <div class="timeline__text__wrapper">
+                                    <div class="timeline__title">Gegevens</div>
+                                    <div class="timeline__subtitle">Een overzicth</div>
+                                </div>
+                            </div>
+                            <div class="item timeline__line"></div>
+                            <div class="item timeline__item">
+                                <div class="circle active"></div>
+                                <div class="timeline__text__wrapper">
+                                    <div class="timeline__title">Betaalmethode</div>
+                                    <div class="timeline__subtitle">Afronding</div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="title__wrapper">
+                            <div class="title float-left">Contactgegevens</div>
+                            <span class="float-end"><u>Heeft u al een account?</u></span>
+                        </div>
+    
+                        <div class="personal__input__box">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="input_pl_wrapper">
+                                        <label for="voornaam">Voornaam</label>
+                                        <input type="text" name="voornaam" id="voornaam" autocomplete="off" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="input_pl_wrapper">
+                                        <label for="achternaam">Achternaam</label>
+                                        <input type="text" name="achternaam" id="achternaam" autocomplete="off" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input_pl_wrapper">
+                                <label for="email">e-mailadres@email.nl</label>
+                                <input type="email" name="email" id="email" autocomplete="off" required>
+                            </div>
+                            <div class="cb_wrapper">
+                                <input type="checkbox" name="aggrement" id="aggrement">
+                                <label for="aggrement">Mogen wij jou af en toe leuke updates en promo’s toesturen?</label>
+                            </div>
+                            <div class="input_pl_wrapper">
+                                <label for="phone">Telefoonnummer</label>
+                                <input type="text" name="phone" id="phone" autocomplete="off" required>
+                            </div>
+                            <div class="input_pl_wrapper">
+                                <label for="date">24/06/1992</label>
+                                <input type="text" name="date" id="date" autocomplete="off" required>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="input_pl_wrapper">
+                                        <label for="company">Bedrijf (optioneel)</label>
+                                        <input type="text" name="company" id="company" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="input_pl_wrapper">
+                                        <label for="btw">BTW</label>
+                                        <input type="text" name="btw" id="btw" autocomplete="off">
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="row">
+                                <div class="col-lg-8 col-md-8 col-sm-12">
+                                    <div class="input_pl_wrapper">
+                                        <label for="street">Straat en huisnummer</label>
+                                        <input type="text" name="street" id="street" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <div class="input_pl_wrapper">
+                                        <label for="appartment">Appartement nr. </label>
+                                        <input type="text" name="appartment" id="appartment" autocomplete="off">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="input_pl_wrapper">
+                                        <label for="postcode">Postcode</label>
+                                        <input type="text" name="postcode" id="postcode" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="input_pl_wrapper">
+                                        <label for="city">Stad</label>
+                                        <input type="text" name="city" id="city" autocomplete="off">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="input_pl_wrapper">
+                                <label for="region">Land / Regio</label>
+                                <input type="text" name="region" id="region" autocomplete="off" required>
+                            </div>
+    
+                            <div class="input_pl_wrapper" style="margin-top: 30px;">
+                                <label for="note">Opmerking</label>
+                                <textarea type="text" name="note" id="note" autocomplete="off" required></textarea>
+                                <span class="info">max 200 woorden</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-12">
+                    <div class="checkout__details__wrapper">
+                        <div class="checkout__details">
+                            <div class="title">Overzicht</div>
+                            <hr>
+                            
+                            <div class="item__wrapper">
+                                <div class="item__logo">
+                                    <img src="./images/logo.png" alt="">
+                                </div>
+                                <div class="item__des__wrapper">
+                                    <span class="title">Enkel massage, Amsterdam , 90 M vrouw</span>
+                                    <span class="sub__title">Datum: 25-2-2021</span>
+                                </div>
+                            </div>
+    
+                            <div class="subtotal__wrapper calculation">
+                                <span class="float-left">Subtotaal</span>
+                                <span class="float-end">€xx,xx</span>
+                            </div>
+    
+                            <hr>
+    
+                            <div class="total__wrapper calculation">
+                                <span class="float-left">Totaal</span>
+                                <span class="float-end">€xx,xx</span>
+                                <span class="">Inclusief €xx,xx BTW</span>
+                            </div>
+    
+                            <span class="label">Kortingscode / cadeaukaart</span>
+                            <div class="input_pl_wrapper">
+                                <label for="code">1234-1234</label>
+                                <input type="text" name="code" id="code" autocomplete="off">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <button class="footer__btn back__btn float-left">ANNULEREN</button>
+            <div class="right__side float-end">
+                <div class="footer__btn total__price">€XX,XX</div>
+                <button class="footer__btn next__btn">VOLGENDE</button>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./js/home.js"></script>
+</html>

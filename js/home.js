@@ -85,3 +85,58 @@ $(".select__package__button").click(function() {
     console.log(target);
     $(`#${target}`).addClass('show__package');
 })
+
+// handle input with placeholder 
+$(".input_pl_wrapper > input").focus(function() {
+    if($(this).val() === ''){
+        let parent = $(this)[0].offsetParent;
+        let placeholder = $(parent)[0].children[0];
+        $(placeholder).css({
+            'font-size' : '11px',
+            'top': '0px'
+        });
+    }
+})
+$(".input_pl_wrapper > input").blur(function() {
+    if($(this).val() === ''){
+        let parent = $(this)[0].offsetParent;
+        let placeholder = $(parent)[0].children[0];
+        $(placeholder).css({
+            'font-size' : '14px',
+            'top': '12px'
+        });
+    }
+})
+$(".input_pl_wrapper > textarea").focus(function() {
+    if($(this).val() === ''){
+        let parent = $(this)[0].offsetParent;
+        let placeholder = $(parent)[0].children[0];
+        $(placeholder).css({
+            'font-size' : '11px',
+            'top': '0px'
+        });
+    }
+})
+$(".input_pl_wrapper > textarea").blur(function() {
+    if($(this).val() === ''){
+        let parent = $(this)[0].offsetParent;
+        let placeholder = $(parent)[0].children[0];
+        $(placeholder).css({
+            'font-size' : '14px',
+            'top': '12px'
+        });
+    }
+})
+$(".expand__toggle__btn").click(function() {
+    const target__element = $(`#${$(this).attr('target')}`);
+    console.log(target__element);
+    const status__expand = target__element.css('height');
+    if(status__expand == '0px'){
+        target__element.css('height' , 'unset');
+        $(this).css('transform' , 'rotate(180deg)');
+    }
+    else {
+        target__element.css('height' , '0px');
+        $(this).css('transform' , 'rotate(0deg)');
+    }
+})
