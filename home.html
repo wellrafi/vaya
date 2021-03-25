@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaya Message</title>
+</head>
+<link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<link rel="stylesheet" href="./fonts/style.css">
+<link rel="stylesheet" href="./css/home.css">
+<body style="background-color: #f4f4f4;">
+    <div class="header__section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-1">
+                    <img src="./images/logo.png" alt="" class="logo">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-11 text-end" id="right__side">
+                    <div class="btn__header price__value">€XX,XX</div>
+                    <div class="btn__header btn__login">LOG IN</div>
+                    <div class="btn__header btn__signup">SIGN UP</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container" style="margin-bottom: 100px;">
+
+        <div class="timeline__wrapper">
+            <div class="item timeline__item active__timeline">
+                <div class="circle"></div>
+                <div class="timeline__text__wrapper">
+                    <div class="timeline__title">Details</div>
+                    <div class="timeline__subtitle">Een overzicth</div>
+                </div>
+            </div>
+            <div class="item timeline__line"></div>
+            <div class="item timeline__item">
+                <div class="circle active"></div>
+                <div class="timeline__text__wrapper">
+                    <div class="timeline__title">Gegevens</div>
+                    <div class="timeline__subtitle">Een overzicth</div>
+                </div>
+            </div>
+            <div class="item timeline__line"></div>
+            <div class="item timeline__item">
+                <div class="circle active"></div>
+                <div class="timeline__text__wrapper">
+                    <div class="timeline__title">Betaalmethode</div>
+                    <div class="timeline__subtitle">Afronding</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-sm-6 col-sm-12">
+                <div class="details__wrapper">
+                    <div class="details__title">Details</div>
+                    <form action="#" method="POST">
+                        <div class="details__subtitle">Locatie</div>
+                        <div class="input__wrapper">
+                            <div class="input__icon"><img src="./images/search__icon.svg" class="icon" alt=""></div>
+                            <input type="text" name="search" placeholder="" autocomplete="off">
+                        </div>
+
+                        <div class="search__results_wrapper">
+                            <div class="search__results__item">
+                                <input type="radio" name="locate" id="locate_name1">
+                                <label for="locate_name1">Vaya , Amsterdam</label>
+                            </div>
+                            <div class="search__results__item">
+                                <input type="radio" name="locate" id="locate_name2">
+                                <label for="locate_name2">Vaya , Rotterdam</label>
+                            </div>
+                            <div class="search__results__item">
+                                <input type="radio" name="locate" id="locate_name3">
+                                <label for="locate_name3">Thuis
+                                    <div class="tooltip__wrapper">
+                                        <img src="./images/info__icon.svg" class="icon hovered tooltip__btn">
+                                        <div id="tooltip__search" class="tooltip__message">
+                                            Indien wij niet voor de deur of bij de buren kunnen parkeren kan er een extra kost
+                                            in rekening gebracht worden voor de tijd dat de masseur onderweg is.<br><br>
+            
+                                            Eventuele kosten voor het parkeren zelf worden apart verrekend en kunnen enkel
+                                            contant na de massage betaald worden.
+                                            Betaald parkeren voor de deur of bij de buren: enkel parking kost <br><br>
+            
+                                            <b>Binnen 150 m van de woning:</b><br>
+                                            15 euro vergoeding + eventuele parking kosten <br><br>
+            
+                                            <b>Alles verder:</b> <br>
+                                            20 euro vergoeding + eventuele parking kosten
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="details__subtitle">Kles soort message</div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <input type="radio" class="btn-check" name="message" id="Enkei" autocomplete="off" checked="checked">
+                                <label class="btn__radiobox select__package__button" message-type="enkei" for="Enkei">Enkei</label>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <input type="radio" class="btn-check" name="message" id="Duo" autocomplete="off">
+                                <label class="btn__radiobox select__package__button" message-type="duo" for="Duo">Duo</label>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <input type="radio" class="btn-check" name="message" id="Opeenvolgend" autocomplete="off">
+                                <label class="btn__radiobox select__package__button" message-type="opeenvolgend" for="Opeenvolgend">Opeenvolgend</label>
+                            </div>
+                            <div class="information__tooltip">
+                                Meer persohen ?
+                                <div class="tooltip__wrapper">
+                                    <img src="./images/info__icon.svg" class="icon hovered tooltip__btn">
+                                    <div id="tooltip__search" class="tooltip__message">
+                                        Indien u met meerdere personenen een massage wilt boeken. Kunt u Contact met ons opnemen via de onderstaande contactgegevens <br><br>
+                                        Vaya MassageTel: +31 (0) 20 123 123
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="enkei" class="show__package">
+                            <div class="person__message__duration__wrapper">
+                                <div class="person__message__duration">
+                                    <div class="details__subtitle">Hoeveel minuten</div>
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-6 col-sm-12">
+                                            <input type="radio" class="btn-check" name="duration" id="60m" autocomplete="off">
+                                            <label class="btn__radiobox" for="60m">60m</label>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-sm-12">
+                                            <input type="radio" class="btn-check" name="duration" id="90m" autocomplete="off">
+                                            <label class="btn__radiobox" for="90m">90m</label>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-sm-12">
+                                            <input type="radio" class="btn-check" name="duration" id="120m" autocomplete="off">
+                                            <label class="btn__radiobox" for="120m">120m</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="person__type__wrapper">
+                                <div class="person__type">
+                                    <div class="details__subtitle">Therapeut voorkeur</div>
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-6 col-sm-12">
+                                            <input type="radio" class="btn-check" name="gender" id="Man" autocomplete="off">
+                                            <label class="btn__radiobox" for="Man">Man</label>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-sm-12">
+                                            <input type="radio" class="btn-check" name="gender" id="Vrouw" autocomplete="off">
+                                            <label class="btn__radiobox" for="Vrouw">Vrouw</label>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-sm-12">
+                                            <input type="radio" class="btn-check" name="gender" id="Geenvoorkeur" autocomplete="off">
+                                            <label class="btn__radiobox" for="Geenvoorkeur">Geen voorkeur</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="duo">
+                            <div class="person__message__duration__wrapper">
+                                <div class="person__message__duration">
+                                    <div class="details__subtitle">Hoeveel minuten</div>
+                                    <span>Persoon (1)</span>
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-6 col-sm-12">
+                                            <input type="radio" class="btn-check" name="duration__persoon1" id="60m_persoon1" autocomplete="off">
+                                            <label class="btn__radiobox" for="60m_persoon1">60m</label>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-sm-12">
+                                            <input type="radio" class="btn-check" name="duration__persoon1" id="90m_persoon1" autocomplete="off">
+                                            <label class="btn__radiobox" for="90m_persoon1">90m</label>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-sm-12">
+                                            <input type="radio" class="btn-check" name="duration__persoon1" id="120m_persoon1" autocomplete="off">
+                                            <label class="btn__radiobox" for="120m_persoon1">120m</label>
+                                        </div>
+                                    </div>
+                                    <span>Persoon (2)</span>
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-6 col-sm-12">
+                                            <input type="radio" class="btn-check" name="duration__persoon2" id="60m_persoon2" autocomplete="off">
+                                            <label class="btn__radiobox" for="60m_persoon2">60m</label>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-sm-12">
+                                            <input type="radio" class="btn-check" name="duration__persoon2" id="90m_persoon2" autocomplete="off">
+                                            <label class="btn__radiobox" for="90m_persoon2">90m</label>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-sm-12">
+                                            <input type="radio" class="btn-check" name="duration__persoon2" id="120m_persoon2" autocomplete="off">
+                                            <label class="btn__radiobox" for="120m_persoon2">120m</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="person__type__wrapper">
+                                <div class="person__type">
+                                    <div class="details__subtitle">Therapeut voorkeur</div>
+                                    <span>Persoon (1)</span>
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-6 col-sm-12">
+                                            <input type="radio" class="btn-check" name="gender_persoon1" id="Man_persoon1" autocomplete="off">
+                                            <label class="btn__radiobox" for="Man_persoon1">Man</label>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-sm-12">
+                                            <input type="radio" class="btn-check" name="gender_persoon1" id="Vrouw_persoon1" autocomplete="off">
+                                            <label class="btn__radiobox" for="Vrouw_persoon1">Vrouw</label>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-sm-12">
+                                            <input type="radio" class="btn-check" name="gender_persoon1" id="Geenvoorkeur_persoon1" autocomplete="off">
+                                            <label class="btn__radiobox" for="Geenvoorkeur_persoon1">Geen voorkeur</label>
+                                        </div>
+                                    </div>
+                                    <span>Persoon (2)</span>
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-6 col-sm-12">
+                                            <input type="radio" class="btn-check" name="gender_persoon2" id="Man_persoon2" autocomplete="off">
+                                            <label class="btn__radiobox" for="Man_persoon2">Man</label>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-sm-12">
+                                            <input type="radio" class="btn-check" name="gender_persoon2" id="Vrouw_persoon2" autocomplete="off">
+                                            <label class="btn__radiobox" for="Vrouw_persoon2">Vrouw</label>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-sm-12">
+                                            <input type="radio" class="btn-check" name="gender_persoon2" id="Geenvoorkeur_persoon2" autocomplete="off">
+                                            <label class="btn__radiobox" for="Geenvoorkeur_persoon2">Geen voorkeur</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="opeenvolgend">
+                            <div class="person__message__duration__wrapper">
+                                <div class="person__message__duration">
+                                    <div class="details__subtitle">Hoeveel minuten</div>
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-6 col-sm-12">
+                                            <input type="radio" class="btn-check" name="duration_ov" id="120m_ov" autocomplete="off">
+                                            <label class="btn__radiobox" for="120m_ov">120m</label>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-sm-12">
+                                            <input type="radio" class="btn-check" name="duration_ov" id="180m_ov" autocomplete="off">
+                                            <label class="btn__radiobox" for="180m_ov">180m</label>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-sm-12">
+                                            <input type="radio" class="btn-check" name="duration_ov" id="240m_ov" autocomplete="off">
+                                            <label class="btn__radiobox" for="240m_ov">240m</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="person__type__wrapper">
+                                <div class="person__type">
+                                    <div class="details__subtitle">Therapeut voorkeur</div>
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-6 col-sm-12">
+                                            <input type="radio" class="btn-check" name="gender_ov" id="Man_ov" autocomplete="off">
+                                            <label class="btn__radiobox" for="Man_ov">Man</label>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-sm-12">
+                                            <input type="radio" class="btn-check" name="gender_ov" id="Vrouw_ov" autocomplete="off">
+                                            <label class="btn__radiobox" for="Vrouw_ov">Vrouw</label>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-sm-12">
+                                            <input type="radio" class="btn-check" name="gender_ov" id="Geenvoorkeur_ov" autocomplete="off">
+                                            <label class="btn__radiobox" for="Geenvoorkeur_ov">Geen voorkeur</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-sm-6 col-sm-12">
+
+                <!-- calendar input data -->
+                <input type="hidden" name="date" id="date__value" value="">
+
+                <div class="calendar__wrapper">
+                    <div class="sub__title">Beschikbaarhied</div>
+
+                    <div class="calendar__box">
+                        <div class="calendar__month__wrapper">
+                            <div class="calendar__btn prev__month text-left"><img src="./images/prev.svg" alt=""></div>
+                            <span class="month__name text-center">februari</span>
+                            <div class="calendar__btn next__month text-end"><img src="./images/next.svg" alt=""></div>
+                        </div>
+                        <div class="days__wrapper">
+                            
+                        </div>
+                        
+                        <div class="calendar__description__wrapper">
+                            <i>
+                                Er is helaas niemand beschikbaar op deze dag voor deze specifieke locatie. Voor beschikbaarheid kunt u contact opnemen via de onderstaande contactgegevens <br><br>
+                                
+                                Vaya Massage<br>
+                            </i>
+
+                            <b>Tel: +31 (0) 20 123 123</b>
+                        </div>
+
+                        <div class="time__lists__wrapper">
+                            <!-- Storing value to input element -->
+                            <input type="hidden" name="start__time" id="start__time">
+                            <input type="hidden" name="end__time" id="end__time">
+
+                            <div class="time__item">10:00 - 10:30</div>
+                            <div class="time__item">10:00 - 10:30</div>
+                            <div class="time__item">10:00 - 10:30</div>
+                            <div class="time__item">10:00 - 10:30</div>
+                            <div class="time__item">10:00 - 10:30</div>
+                            <div class="time__item">10:00 - 10:30</div>
+                            <div class="time__item">10:00 - 10:30</div>
+                            <div class="time__item">10:00 - 10:30</div>
+                            <div class="time__item">10:00 - 10:30</div>
+                            <div class="time__item">10:00 - 10:30</div>
+                            <div class="time__item">10:00 - 10:30</div>
+                            <div class="time__item">10:00 - 10:30</div>
+                            <div class="time__item">10:00 - 10:30</div>
+                            <div class="time__item">10:00 - 10:30</div>
+                            <div class="time__item">10:00 - 10:30</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <button class="footer__btn back__btn float-left">ANNULEREN</button>
+            <div class="right__side float-end">
+                <div class="footer__btn total__price">€XX,XX</div>
+                <button class="footer__btn next__btn">VOLGENDE</button>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./js/home.js"></script>
+</html>
