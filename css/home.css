@@ -6,7 +6,7 @@ html {
   -ms-overflow-style: none;
 }
 body {
-  min-height: 110vh;
+  min-height: 100vh;
   position: relative;
   float: left;
   width: 100%;
@@ -518,7 +518,7 @@ footer .right__side * {
 }
 .bg {
   width: 40%;
-  height: 95%;
+  height: 90%;
   position: absolute;
   background-color: white;
   z-index: 99;
@@ -552,4 +552,143 @@ footer .right__side * {
   width: 18px;
   cursor: pointer;
   transition: 0.5s;
+}
+.pricing__wrapper > .pricing__box {
+  width: 100%;
+  background-color: white;
+  border-radius: 4px;
+  padding: 25px 20px;
+}
+.pricing__wrapper > .pricing__box > .pricing__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 2%;
+  display: block;
+}
+.pricing__box > .pricing__value {
+  margin: 25px 0;
+}
+.pricing__box > .pricing__value > .value  {
+  font-size: 40px;
+  font-family: 'Century Gothic Bold';
+  line-height: 64px;
+  letter-spacing: 2%;
+}
+.pricing__box > .pricing__value > span:nth-child(2) {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 2%;
+  font-family: 'Century Gothic Regular';
+}
+.pricing__box .benefits__wrapper > .item {
+  margin: 10px 0;
+  position: relative;
+}
+.pricing__box > .benefits__wrapper {
+  margin: 30px 0;
+}
+.benefits__wrapper > .item > .title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 1%;
+}
+.benefits__wrapper > .item > .des {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1%;
+}
+.pricing__box > .pricing__btn {
+  border: 1px solid #D1B6AF;
+  color: #D1B6AF;
+  border-radius: 4px;
+  background: transparent;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  width: 100%;
+}
+.pricing__box > .pricing__active__btn {
+  background-color: #D1B6AF;
+  color: white;
+}
+.payment__inputbox__wrapper {
+  margin: 10px 0;
+  position: relative;
+}
+.payment__inputbox__wrapper > .payment__title {
+  font-size: 20px;
+  font-family: 'Century Gothic Regular';
+  line-height: 32px;
+  letter-spacing: 2%;
+}
+.payment__inputbox__wrapper > .input__box__wrapper {
+  position: relative;
+  background-color: white;
+  border-radius: 4px;
+  padding: 15px;
+  margin: 10px;
+  border: 1px solid #C7C8C7;
+}
+.payment__inputbox__wrapper > .input__box__wrapper > .payment__input__wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.payment__inputbox__wrapper > .input__box__wrapper > .payment__input__wrapper > .inpt {
+  border:none;
+  background-color: transparent;
+}
+.payment__input__wrapper > .link {
+  flex: .1;
+  text-align: right;
+  color: #C2A097;
+  text-decoration: underline;
+}
+.payment__input__wrapper > .label {
+  flex: .3;
+  text-align: left;
+  color: #9B9C99;
+}
+.payment__input__wrapper > .inpt {
+  flex: .6;
+}
+.payment__input__wrapper > .radio__input,
+.payment__input__wrapper > .bank__logo {
+  flex-grow: 1;
+}
+.payment__input__wrapper > .radio__input > input[type="radio"] {cursor: pointer;}
+.payment__input__wrapper > .radio__input > label {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0;
+  font-weight: 500;
+  cursor: pointer;
+}
+.payment__input__wrapper > .bank__logo {
+  text-align: right;
+}
+.payment__inputbox__wrapper > .input__box__wrapper > .payment__input__wrapper {margin: 5px 0;}
+.payment__aggrement__wrapper {
+  display: block;
+  margin: 20px 25px;
+}
+.payment__aggrement__wrapper label {
+  display: inline-block;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.payment__btn {
+  width: 100%;
+  border:none;
+  background-color: #D1B6AF;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 4px;
+  text-align: center;
+  padding: 15px 0;
 }

@@ -46,7 +46,7 @@
                                 </div>
                             </div>
                             <div class="item timeline__line"></div>
-                            <div class="item timeline__item active__timeline">
+                            <div class="item timeline__item">
                                 <div class="circle active"></div>
                                 <div class="timeline__text__wrapper">
                                     <div class="timeline__title">Gegevens</div>
@@ -54,7 +54,7 @@
                                 </div>
                             </div>
                             <div class="item timeline__line"></div>
-                            <div class="item timeline__item">
+                            <div class="item timeline__item active__timeline">
                                 <div class="circle active"></div>
                                 <div class="timeline__text__wrapper">
                                     <div class="timeline__title">Betaalmethode</div>
@@ -64,97 +64,95 @@
                         </div>
         
                         <div class="title__wrapper">
-                            <div class="title float-left">Contactgegevens</div>
-                            <span class="float-end"><u>Heeft u al een account?</u></span>
+                            <div class="title float-left">Betaalmethode</div>
                         </div>
-    
-                        <div class="personal__input__box">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <div class="input_pl_wrapper">
-                                        <label for="voornaam">Voornaam</label>
-                                        <input type="text" name="voornaam" id="voornaam" autocomplete="off" required>
+                        <form action="#" method="POST">
+                            <div class="personal__input__box">
+                                <div class="payment__inputbox__wrapper">                                    
+                                    <div class="payment__title">Gegevens</div>
+                                    <div class="input__box__wrapper">
+                                        <div class="payment__input__wrapper">
+                                            <label class="label" for="contact">Contact</label>
+                                            <input type="email" id="contact" name="payment__email" class="inpt">
+                                            <div class="link">Wijzigen</div>
+                                        </div>
+                                        <hr style="border: 1px solid #C7C7C7;">
+                                        <div class="payment__input__wrapper">
+                                            <label class="label" for="adres">Adres</label>
+                                            <input type="email" id="adres" name="payment__email" class="inpt">
+                                            <div class="link">Wijzigen</div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <div class="input_pl_wrapper">
-                                        <label for="achternaam">Achternaam</label>
-                                        <input type="text" name="achternaam" id="achternaam" autocomplete="off" required>
+                                <div class="payment__inputbox__wrapper">                                    
+                                    <div class="payment__title">Betaalmethode</div>
+                                    <div class="input__box__wrapper">
+                                        <div class="payment__input__wrapper">
+                                            <div class="radio__input">
+                                                <input type="radio" name="bank_name" id="Sofort">
+                                                <label for="Sofort">Sofort</label>
+                                            </div>
+                                            <div class="bank__logo">
+                                                <img src="./images/Sofort.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <hr style="border: 1px solid #C7C7C7;">
+                                        <div class="payment__input__wrapper">
+                                            <div class="radio__input">
+                                                <input type="radio" name="bank_name" id="Bank">
+                                                <label for="Bank">Bank</label>
+                                            </div>
+                                            <div class="bank__logo">
+                                                <img src="./images/Ideal.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <hr style="border: 1px solid #C7C7C7;">
+                                        <div class="payment__input__wrapper">
+                                            <div class="radio__input">
+                                                <input type="radio" name="bank_name" id="VISA">
+                                                <label for="VISA">VISA</label>
+                                            </div>
+                                            <div class="bank__logo">
+                                                <img src="./images/Visa.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <hr style="border: 1px solid #C7C7C7;">
+                                        <div class="payment__input__wrapper">
+                                            <div class="radio__input">
+                                                <input type="radio" name="bank_name" id="Tegoed">
+                                                <label for="Tegoed">Tegoed</label>
+                                            </div>
+                                            <div class="bank__logo">
+                                                <img src="./images/PayPal.svg" alt="">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="input_pl_wrapper">
-                                <label for="email">e-mailadres@email.nl</label>
-                                <input type="email" name="email" id="email" autocomplete="off" required>
-                            </div>
-                            <div class="cb_wrapper">
-                                <input type="checkbox" name="aggrement" id="aggrement">
-                                <label for="aggrement">Mogen wij jou af en toe leuke updates en promo’s toesturen?</label>
-                            </div>
-                            <div class="input_pl_wrapper">
-                                <label for="phone">Telefoonnummer</label>
-                                <input type="text" name="phone" id="phone" autocomplete="off" required>
-                            </div>
-                            <div class="input_pl_wrapper">
-                                <label for="date">24/06/1992</label>
-                                <input type="text" name="date" id="date" autocomplete="off" required>
-                            </div>
-                            
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <div class="input_pl_wrapper">
-                                        <label for="company">Bedrijf (optioneel)</label>
-                                        <input type="text" name="company" id="company" autocomplete="off">
+                                <div class="payment__inputbox__wrapper">                                    
+                                    <div class="payment__title">Factuuradres</div>
+                                    <div class="input__box__wrapper">
+                                        <div class="payment__input__wrapper">
+                                            <div class="radio__input">
+                                                <input type="radio" name="Factuuradres" id="Zelfde">
+                                                <label for="Zelfde">Zelfde als woonadres</label>
+                                            </div>
+                                        </div>
+                                        <hr style="border: 1px solid #C7C7C7;">
+                                        <div class="payment__input__wrapper">
+                                            <div class="radio__input">
+                                                <input type="radio" name="Factuuradres" id="Een">
+                                                <label for="Een">Een ander factuuradres gebruiken </label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <div class="input_pl_wrapper">
-                                        <label for="btw">BTW</label>
-                                        <input type="text" name="btw" id="btw" autocomplete="off">
-                                    </div>
+                                <div class="payment__aggrement__wrapper">
+                                    <input type="checkbox" name="payment__aggrement" id="payment__aggrement">
+                                    <label for="payment__aggrement">Ga je akkoord met onze algemene voorwaarden? </label>
                                 </div>
+                                <button class="payment__btn" type="button">AFRENKENEN</button>
                             </div>
-    
-                            <div class="row">
-                                <div class="col-lg-8 col-md-8 col-sm-12">
-                                    <div class="input_pl_wrapper">
-                                        <label for="street">Straat en huisnummer</label>
-                                        <input type="text" name="street" id="street" autocomplete="off">
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <div class="input_pl_wrapper">
-                                        <label for="appartment">Appartement nr. </label>
-                                        <input type="text" name="appartment" id="appartment" autocomplete="off">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <div class="input_pl_wrapper">
-                                        <label for="postcode">Postcode</label>
-                                        <input type="text" name="postcode" id="postcode" autocomplete="off">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <div class="input_pl_wrapper">
-                                        <label for="city">Stad</label>
-                                        <input type="text" name="city" id="city" autocomplete="off">
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="input_pl_wrapper">
-                                <label for="region">Land / Regio</label>
-                                <input type="text" name="region" id="region" autocomplete="off" required>
-                            </div>
-    
-                            <div class="input_pl_wrapper" style="margin-top: 30px;">
-                                <label for="note">Opmerking</label>
-                                <textarea type="text" name="note" id="note" autocomplete="off" required></textarea>
-                                <span class="info">max 200 woorden</span>
-                            </div>
-                        </div>
+                        </form>
                     </div>
     
                 </div>
@@ -187,11 +185,11 @@
                                 <span class="">Inclusief €xx,xx BTW</span>
                             </div>
     
-                            <span class="label">Kortingscode / cadeaukaart</span>
+                            <!-- <span class="label">Kortingscode / cadeaukaart</span>
                             <div class="input_pl_wrapper">
                                 <label for="code">1234-1234</label>
                                 <input type="text" name="code" id="code" autocomplete="off">
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
