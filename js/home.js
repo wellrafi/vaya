@@ -140,3 +140,10 @@ $(".expand__toggle__btn").click(function() {
         $(this).css('transform' , 'rotate(0deg)');
     }
 })
+
+$('.pricing__btn').click(function() {
+    $(".pricing__active__btn").removeClass("pricing__active__btn");
+    $(this).addClass("pricing__active__btn");
+    const parent__element = $($(this)[0].parentElement);
+    $("#plan").val($(parent__element[0].children[0]).text());
+})
