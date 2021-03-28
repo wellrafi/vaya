@@ -5,6 +5,9 @@ html {
   overflow: -moz-scrollbars-none;
   -ms-overflow-style: none;
 }
+.pointer{
+  cursor: pointer;
+}
 body {
   min-height: 110vh;
   position: relative;
@@ -50,9 +53,11 @@ body {
   font-weight: 700;
   color: black;
 }
-.header__section #right__side > .btn__signup {
+.header__section #right__side > .btn__signup,
+.header__section #right__side > a.btn__signup {
   background-color: #d1b6af;
   color: white;
+  text-decoration: none;
 }
 .header__section #right__side > .price__value {
   border: 1px solid #d1b6af;

@@ -140,3 +140,13 @@ $(".expand__toggle__btn").click(function() {
         $(this).css('transform' , 'rotate(0deg)');
     }
 })
+
+$('.toggle-eye').on('click', function () {
+    $(this).toggleClass('active');
+    $('#eye-svg').toggleClass('open');
+    if($(this).hasClass('active')){
+        $('#wachtwoord').attr('type', 'text');
+    } else {
+        $('#wachtwoord').attr('type', 'password');
+    }
+})
