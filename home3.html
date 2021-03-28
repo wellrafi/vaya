@@ -13,9 +13,43 @@
 <link rel="stylesheet" href="./fonts/style.css">
 <link rel="stylesheet" href="./css/home.css">
 <body style="background-color: #f4f4f4;">
+    <div class="hidden__menu">
+        <div class="container">
+            <div class="menu__list">
+                <span class="item">LOG IN</span>
+                <span class="item">SIGN UP</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="hidden__menu__sidebar">
+        <div class="sidebar__content__wrapper">
+            <div class="title">Overzicht</div>
+            <div class="item__wrapper">
+                <div class="item__logo"><img src="./images/logo.png" alt=""></div>
+                <div class="item__desc">
+                    <div class="title">Enkel massage, Amsterdam , 90 M vrouw </div>
+                    <div class="des">Datum: 25-2-2021</div>
+                </div>
+            </div>
+            <div class="subtotal__wrapper calculation">
+                <span class="float-left">Subtotaal</span>
+                <span class="float-end">€xx,xx</span>
+            </div>
+
+            <hr>
+    
+            <div class="total__wrapper calculation">
+                <span class="float-left">Totaal</span>
+                <span class="float-end">€xx,xx</span>
+                <span class="">Inclusief €xx,xx BTW</span>
+            </div>
+        </div>
+    </div>
+
     <div class="header__section">
         <div class="container">
-            <div class="row">
+            <div class="row flex-nowrap">
                 <div class="col-lg-6 col-md-6 col-sm-1">
                     <img src="./images/logo.png" alt="" class="logo">
                 </div>
@@ -23,6 +57,12 @@
                     <!-- <div class="btn__header price__value">€XX,XX</div> -->
                     <div class="btn__header btn__login">LOG IN</div>
                     <div class="btn__header btn__signup">SIGN UP</div>
+                    <div class="mobile__menu__expand" status="hidden">
+                        <img src="./images/menu.svg" alt="">
+                    </div>
+                    <div class="mobile__sidebar__expand" status="hidden">
+                        <img src="./images/cart.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -31,10 +71,10 @@
 
         <div class="bg"></div>
         
-        <div class="container container__contents">
+        <div class="container container__contents pricing__container">
     
             <div class="row">
-                <div class="col-lg-7 col-md-7 col-sm-12">
+                <div class="col-lg-7 col-md-12 col-sm-12">
                     
                     <div class="personal__input__wrapper">
                         <div class="timeline__wrapper">
@@ -70,7 +110,7 @@
                             <div class="personal__input__box">
                                 <input type="hidden" name="plan" id="plan" value="">
                                 <div class="row">
-                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="col-lg-4 col-md-12 col-sm-12">
                                         
                                         <div class="pricing__wrapper">
                                             <div class="pricing__box">
@@ -98,7 +138,7 @@
                                         </div>
 
                                     </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="col-lg-4 col-md-12 col-sm-12">
 
                                         <div class="pricing__wrapper">
                                             <div class="pricing__box">
@@ -126,7 +166,7 @@
                                         </div>
 
                                     </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="col-lg-4 col-md-12 col-sm-12">
 
                                         <div class="pricing__wrapper">
                                             <div class="pricing__box">
@@ -160,7 +200,7 @@
                     </div>
     
                 </div>
-                <div class="col-lg-5 col-md-5 col-sm-12">
+                <div class="col-lg-5 col-md-5 col-sm-12 sidebar__payment__info">
                     <div class="checkout__details__wrapper">
                         <div class="checkout__details">
                             <div class="title">Overzicht</div>
