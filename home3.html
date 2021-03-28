@@ -13,7 +13,6 @@
 <link rel="stylesheet" href="./fonts/style.css">
 <link rel="stylesheet" href="./css/home.css">
 <body style="background-color: #f4f4f4;">
-    
     <div class="hidden__menu">
         <div class="container">
             <div class="menu__list">
@@ -45,12 +44,6 @@
                 <span class="float-end">€xx,xx</span>
                 <span class="">Inclusief €xx,xx BTW</span>
             </div>
-
-            <span class="label">Kortingscode / cadeaukaart</span>
-            <div class="input_pl_wrapper">
-                <label for="code">1234-1234</label>
-                <input type="text" name="code" id="code" autocomplete="off">
-            </div>
         </div>
     </div>
 
@@ -78,7 +71,7 @@
 
         <div class="bg"></div>
         
-        <div class="container container__contents">
+        <div class="container container__contents pricing__container">
     
             <div class="row">
                 <div class="col-lg-7 col-md-12 col-sm-12">
@@ -93,7 +86,7 @@
                                 </div>
                             </div>
                             <div class="item timeline__line"></div>
-                            <div class="item timeline__item active__timeline">
+                            <div class="item timeline__item">
                                 <div class="circle active"></div>
                                 <div class="timeline__text__wrapper">
                                     <div class="timeline__title">Gegevens</div>
@@ -101,7 +94,7 @@
                                 </div>
                             </div>
                             <div class="item timeline__line"></div>
-                            <div class="item timeline__item">
+                            <div class="item timeline__item active__timeline">
                                 <div class="circle active"></div>
                                 <div class="timeline__text__wrapper">
                                     <div class="timeline__title">Betaalmethode</div>
@@ -111,97 +104,99 @@
                         </div>
         
                         <div class="title__wrapper">
-                            <div class="title float-left">Contactgegevens</div>
-                            <span class="float-end title__link"><u>Heeft u al een account?</u></span>
+                            <div class="title float-left">Betaalmethode</div>
                         </div>
-    
-                        <div class="personal__input__box">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <div class="input_pl_wrapper">
-                                        <label for="voornaam">Voornaam</label>
-                                        <input type="text" name="voornaam" id="voornaam" autocomplete="off" required>
+                        <form action="#" method="POST">
+                            <div class="personal__input__box">
+                                <input type="hidden" name="plan" id="plan" value="">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-12 col-sm-12">
+                                        
+                                        <div class="pricing__wrapper">
+                                            <div class="pricing__box">
+                                                <span class="pricing__title">Eenmalig</span>
+                                                <div class="pricing__value">
+                                                    <span class="value">11</span>
+                                                    <span>/ eenmalig</span>
+                                                </div>
+                                                <div class="benefits__wrapper">
+                                                    <div class="item">
+                                                        <span class="title">Benefit</span>
+                                                        <span class="des">One</span>
+                                                    </div>
+                                                    <div class="item">
+                                                        <span class="title">Benefit</span>
+                                                        <span class="des"></span>
+                                                    </div>
+                                                    <div class="item">
+                                                        <span class="title">Benefit</span>
+                                                        <span class="des">There here</span>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="pricing__btn">KIES EENMALIG</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-4 col-md-12 col-sm-12">
+
+                                        <div class="pricing__wrapper">
+                                            <div class="pricing__box">
+                                                <span class="pricing__title">10-rittenkaart</span>
+                                                <div class="pricing__value">
+                                                    <span class="value">11</span>
+                                                    <span>/eenmalig</span>
+                                                </div>
+                                                <div class="benefits__wrapper">
+                                                    <div class="item">
+                                                        <span class="title">Benefit</span>
+                                                        <span class="des">One</span>
+                                                    </div>
+                                                    <div class="item">
+                                                        <span class="title">Benefit</span>
+                                                        <span class="des"></span>
+                                                    </div>
+                                                    <div class="item">
+                                                        <span class="title">Benefit</span>
+                                                        <span class="des">There here</span>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="pricing__btn">KIES EENMALIG</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-4 col-md-12 col-sm-12">
+
+                                        <div class="pricing__wrapper">
+                                            <div class="pricing__box">
+                                                <span class="pricing__title">Abonnement</span>
+                                                <div class="pricing__value">
+                                                    <span class="value">11</span>
+                                                    <span>/eenmalig</span>
+                                                </div>
+                                                <div class="benefits__wrapper">
+                                                    <div class="item">
+                                                        <span class="title">Benefit</span>
+                                                        <span class="des">One</span>
+                                                    </div>
+                                                    <div class="item">
+                                                        <span class="title">Benefit</span>
+                                                        <span class="des"></span>
+                                                    </div>
+                                                    <div class="item">
+                                                        <span class="title">Benefit</span>
+                                                        <span class="des">There here</span>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="pricing__btn pricing__active__btn">KIES EENMALIG</button>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <div class="input_pl_wrapper">
-                                        <label for="achternaam">Achternaam</label>
-                                        <input type="text" name="achternaam" id="achternaam" autocomplete="off" required>
-                                    </div>
-                                </div>
                             </div>
-                            <div class="input_pl_wrapper">
-                                <label for="email">e-mailadres@email.nl</label>
-                                <input type="email" name="email" id="email" autocomplete="off" required>
-                            </div>
-                            <div class="cb_wrapper">
-                                <input type="checkbox" name="aggrement" id="aggrement">
-                                <label for="aggrement">Mogen wij jou af en toe leuke updates en promo’s toesturen?</label>
-                            </div>
-                            <div class="input_pl_wrapper">
-                                <label for="phone">Telefoonnummer</label>
-                                <input type="text" name="phone" id="phone" autocomplete="off" required>
-                            </div>
-                            <div class="input_pl_wrapper">
-                                <label for="date">24/06/1992</label>
-                                <input type="text" name="date" id="date" autocomplete="off" required>
-                            </div>
-                            
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <div class="input_pl_wrapper">
-                                        <label for="company">Bedrijf (optioneel)</label>
-                                        <input type="text" name="company" id="company" autocomplete="off">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <div class="input_pl_wrapper">
-                                        <label for="btw">BTW</label>
-                                        <input type="text" name="btw" id="btw" autocomplete="off">
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="row">
-                                <div class="col-lg-8 col-md-8 col-sm-12">
-                                    <div class="input_pl_wrapper">
-                                        <label for="street">Straat en huisnummer</label>
-                                        <input type="text" name="street" id="street" autocomplete="off">
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <div class="input_pl_wrapper">
-                                        <label for="appartment">Appartement nr. </label>
-                                        <input type="text" name="appartment" id="appartment" autocomplete="off">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <div class="input_pl_wrapper">
-                                        <label for="postcode">Postcode</label>
-                                        <input type="text" name="postcode" id="postcode" autocomplete="off">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <div class="input_pl_wrapper">
-                                        <label for="city">Stad</label>
-                                        <input type="text" name="city" id="city" autocomplete="off">
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="input_pl_wrapper">
-                                <label for="region">Land / Regio</label>
-                                <input type="text" name="region" id="region" autocomplete="off" required>
-                            </div>
-    
-                            <div class="input_pl_wrapper" style="margin-top: 30px;">
-                                <label for="note">Opmerking</label>
-                                <textarea type="text" name="note" id="note" autocomplete="off" required></textarea>
-                                <span class="info">max 200 woorden</span>
-                            </div>
-                        </div>
+                        </form>
                     </div>
     
                 </div>
@@ -234,11 +229,11 @@
                                 <span class="">Inclusief €xx,xx BTW</span>
                             </div>
     
-                            <span class="label">Kortingscode / cadeaukaart</span>
+                            <!-- <span class="label">Kortingscode / cadeaukaart</span>
                             <div class="input_pl_wrapper">
                                 <label for="code">1234-1234</label>
                                 <input type="text" name="code" id="code" autocomplete="off">
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>

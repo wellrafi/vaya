@@ -107,6 +107,7 @@ $(".input_pl_wrapper > input").blur(function() {
         });
     }
 })
+
 $(".input_pl_wrapper > textarea").focus(function() {
     if($(this).val() === ''){
         let parent = $(this)[0].offsetParent;
@@ -117,6 +118,7 @@ $(".input_pl_wrapper > textarea").focus(function() {
         });
     }
 })
+
 $(".input_pl_wrapper > textarea").blur(function() {
     if($(this).val() === ''){
         let parent = $(this)[0].offsetParent;
@@ -127,6 +129,7 @@ $(".input_pl_wrapper > textarea").blur(function() {
         });
     }
 })
+
 $(".expand__toggle__btn").click(function() {
     const target__element = $(`#${$(this).attr('target')}`);
     console.log(target__element);
@@ -138,6 +141,59 @@ $(".expand__toggle__btn").click(function() {
     else {
         target__element.css('height' , '0px');
         $(this).css('transform' , 'rotate(0deg)');
+    }
+})
+
+$('.pricing__btn').click(function() {
+    $(".pricing__active__btn").removeClass("pricing__active__btn");
+    $(this).addClass("pricing__active__btn");
+    const parent__element = $($(this)[0].parentElement);
+    $("#plan").val($(parent__element[0].children[0]).text());
+})
+
+$(".mobile__menu__expand").click(function() {
+    if($(this).attr('status') == 'hidden'){
+        $(this).attr("status" , "expand");
+        $(this).addClass("expand__active");
+        $($(this)[0].children[0]).attr('src' , "./images/close_menu.png")
+        $(".hidden__menu").css("height" , "200px");
+    }else if($(this).attr('status') == 'expand'){
+        $(this).attr("status" , "hidden");
+        $(this).removeClass("expand__active");
+        $(".hidden__menu").css("height" , "0");
+        $($(this)[0].children[0]).attr('src' , "./images/menu.svg")
+    }
+})
+
+$(".mobile__sidebar__expand").click(function() {
+    if($(this).attr('status') == 'hidden'){
+        $(this).attr("status" , "expand");
+        $(this).addClass("expand__active");
+        $($(this)[0].children[0]).attr('src' , "./images/close_menu.png")
+        $($(this)[0].children[0]).css('width' , '25px');
+        $(".hidden__menu__sidebar").css("width" , "90vw");
+    }else if($(this).attr('status') == 'expand'){
+        $(this).attr("status" , "hidden");
+        $(this).removeClass("expand__active");
+        $(".hidden__menu__sidebar").css("width" , "0");
+        $($(this)[0].children[0]).attr('src' , "./images/cart.png")
+        $($(this)[0].children[0]).css('width' , '30px');
+    }
+})
+
+$(window).scroll(function(){
+    let st = $(this).scrollTop();
+    let calculation = 60 - st;
+    let cal_side = 59 - st;
+    if(calculation > 0){
+        $('.hidden__menu').css("top" , `${calculation}px`)
+    }else{
+        $('.hidden__menu').css("top" , `0px`);
+    }
+    if(cal_side > 0){
+        $('.hidden__menu__sidebar').css("top" , `${cal_side}px`)
+    }else{
+        $('.hidden__menu__sidebar').css("top" , `0px`);
     }
 })
 
