@@ -147,3 +147,46 @@ $('.pricing__btn').click(function() {
     const parent__element = $($(this)[0].parentElement);
     $("#plan").val($(parent__element[0].children[0]).text());
 })
+$(".mobile__menu__expand").click(function() {
+    if($(this).attr('status') == 'hidden'){
+        $(this).attr("status" , "expand");
+        $(this).addClass("expand__active");
+        $($(this)[0].children[0]).attr('src' , "./images/close_menu.png")
+        $(".hidden__menu").css("height" , "200px");
+    }else if($(this).attr('status') == 'expand'){
+        $(this).attr("status" , "hidden");
+        $(this).removeClass("expand__active");
+        $(".hidden__menu").css("height" , "0");
+        $($(this)[0].children[0]).attr('src' , "./images/menu.svg")
+    }
+})
+$(".mobile__sidebar__expand").click(function() {
+    if($(this).attr('status') == 'hidden'){
+        $(this).attr("status" , "expand");
+        $(this).addClass("expand__active");
+        $($(this)[0].children[0]).attr('src' , "./images/close_menu.png")
+        $($(this)[0].children[0]).css('width' , '25px');
+        $(".hidden__menu__sidebar").css("width" , "90vw");
+    }else if($(this).attr('status') == 'expand'){
+        $(this).attr("status" , "hidden");
+        $(this).removeClass("expand__active");
+        $(".hidden__menu__sidebar").css("width" , "0");
+        $($(this)[0].children[0]).attr('src' , "./images/cart.png")
+        $($(this)[0].children[0]).css('width' , '30px');
+    }
+})
+$(window).scroll(function(){
+    let st = $(this).scrollTop();
+    let calculation = 60 - st;
+    let cal_side = 59 - st;
+    if(calculation > 0){
+        $('.hidden__menu').css("top" , `${calculation}px`)
+    }else{
+        $('.hidden__menu').css("top" , `0px`);
+    }
+    if(cal_side > 0){
+        $('.hidden__menu__sidebar').css("top" , `${cal_side}px`)
+    }else{
+        $('.hidden__menu__sidebar').css("top" , `0px`);
+    }
+})

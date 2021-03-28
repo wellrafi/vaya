@@ -13,21 +13,31 @@
 <link rel="stylesheet" href="./fonts/style.css">
 <link rel="stylesheet" href="./css/home.css">
 <body style="background-color: #f4f4f4;">
+    <div class="hidden__menu">
+        <div class="container">
+            <div class="menu__list">
+                <span class="item">LOG IN</span>
+                <span class="item">SIGN UP</span>
+            </div>
+        </div>
+    </div>
     <div class="header__section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-1">
+            <div class="row flex-nowrap">
+                <div class="col-lg-6 col-md-6 col-sm-2">
                     <img src="./images/logo.png" alt="" class="logo">
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-11 text-end" id="right__side">
+                <div class="col-lg-6 col-md-6 col-sm-10 text-end" id="right__side">
                     <div class="btn__header price__value">€XX,XX</div>
                     <div class="btn__header btn__login">LOG IN</div>
                     <div class="btn__header btn__signup">SIGN UP</div>
+                    <div class="mobile__menu__expand" status="hidden">
+                        <img src="./images/menu.svg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    
     <div class="container" style="margin-bottom: 100px;">
 
         <div class="timeline__wrapper">
