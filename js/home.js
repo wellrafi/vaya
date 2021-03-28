@@ -107,6 +107,7 @@ $(".input_pl_wrapper > input").blur(function() {
         });
     }
 })
+
 $(".input_pl_wrapper > textarea").focus(function() {
     if($(this).val() === ''){
         let parent = $(this)[0].offsetParent;
@@ -117,6 +118,7 @@ $(".input_pl_wrapper > textarea").focus(function() {
         });
     }
 })
+
 $(".input_pl_wrapper > textarea").blur(function() {
     if($(this).val() === ''){
         let parent = $(this)[0].offsetParent;
@@ -127,6 +129,7 @@ $(".input_pl_wrapper > textarea").blur(function() {
         });
     }
 })
+
 $(".expand__toggle__btn").click(function() {
     const target__element = $(`#${$(this).attr('target')}`);
     console.log(target__element);
@@ -147,6 +150,7 @@ $('.pricing__btn').click(function() {
     const parent__element = $($(this)[0].parentElement);
     $("#plan").val($(parent__element[0].children[0]).text());
 })
+
 $(".mobile__menu__expand").click(function() {
     if($(this).attr('status') == 'hidden'){
         $(this).attr("status" , "expand");
@@ -160,6 +164,7 @@ $(".mobile__menu__expand").click(function() {
         $($(this)[0].children[0]).attr('src' , "./images/menu.svg")
     }
 })
+
 $(".mobile__sidebar__expand").click(function() {
     if($(this).attr('status') == 'hidden'){
         $(this).attr("status" , "expand");
@@ -175,6 +180,7 @@ $(".mobile__sidebar__expand").click(function() {
         $($(this)[0].children[0]).css('width' , '30px');
     }
 })
+
 $(window).scroll(function(){
     let st = $(this).scrollTop();
     let calculation = 60 - st;
@@ -188,5 +194,15 @@ $(window).scroll(function(){
         $('.hidden__menu__sidebar').css("top" , `${cal_side}px`)
     }else{
         $('.hidden__menu__sidebar').css("top" , `0px`);
+    }
+})
+
+$('.toggle-eye').on('click', function () {
+    $(this).toggleClass('active');
+    $('#eye-svg').toggleClass('open');
+    if($(this).hasClass('active')){
+        $('#wachtwoord').attr('type', 'text');
+    } else {
+        $('#wachtwoord').attr('type', 'password');
     }
 })
