@@ -227,3 +227,15 @@ $(file).on('change', function (e) {
         $('#has-selected').html('HAS SELECTED')
     }
 })
+
+$('.damtum-toggle').on('click', function (event) {
+    event.stopPropagation();
+    $('.date-overlay').toggleClass('open');
+})
+
+$(document).click(function(event) { 
+    var $target = $(event.target);
+    if(!$target.closest('.date-overlay').length) {
+        $('.date-overlay').removeClass('open');
+    }        
+});
