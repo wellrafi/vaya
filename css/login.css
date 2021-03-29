@@ -6,27 +6,12 @@
     padding: 10px 0px;
 }
 
-body{
-    min-height: 100vh;
-}
-
 .auth-form label{
     margin-bottom: 8px;
 }
 
-.btn{
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 24px;
-    padding: .450rem 1rem;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
 h5{
+    font-family: 'Century Gothic Bold';
     font-size: 24px;
     line-height: 32px;
     letter-spacing: 0.02em;
@@ -46,30 +31,6 @@ h5{
     margin-left: 10px;
 }
 
-.text-gray{
-    color: #969696 !important;
-}
-
-.btn-primary{
-    background-color: #C2A097 !important;
-    color: #fff !important;
-    border: none;
-}
-
-.btn-primary:focus{
-    box-shadow: none !important;
-    border: #9b8e8a !important;
-}
-
-.form-control:focus{
-    box-shadow: none !important;
-    border: 1px solid #a1847f !important;
-}
-
-.form-check-input:focus{
-    box-shadow: none !important;
-}
-
 .vertical-middle{
     display: table-cell;
     vertical-align: middle;
@@ -79,10 +40,6 @@ h5{
     flex: 1;
 }
 
-main{
-    height: calc(100vh - 61px);
-    min-height: 1000px;
-}
 
 
 
@@ -106,28 +63,18 @@ label{
     color: #191A15;
 }
 
-.input-group input[type=text],
-.input-group input[type=password]{
-    border-right: none !important;
-}
+
 
 .form-control{
     height: 40px;
 }
 
-.input-group-text {
-    background-color: #fff;
-}
 
 .auth-form{
     max-width: 400px;
     min-width: 350px;
 }
 
-.form-check-input:checked {
-    background-color: #288597 !important;
-    border-color: #288597 !important;
-}
 
 .image_login img{
     width: 100%;
@@ -167,9 +114,3 @@ label{
     }
 }
 
-@media screen and (max-width: 500px){
-    main{
-        height: calc(100vh - 61px);
-        min-height: 800px;
-    }
-}

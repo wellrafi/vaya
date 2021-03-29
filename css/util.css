@@ -1,0 +1,135 @@
+h5{
+    font-family: 'Century Gothic Bold';
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #191A15 !important;
+    font-style: normal;
+}
+
+.w50{
+    width: 50px;
+}
+
+.f-14{
+    font-size: 14px;
+}
+
+.border-primary{
+    border: 1px solid rgba(0,0,0,.125) !important;
+}
+
+.shadow-none{
+    box-shadow: none;
+}
+
+.line-d{
+    width: 20px;
+    height: 1px;
+    background-color: #9B9B9B;
+}
+
+.text-primary{
+    color: #C2A097 !important;
+}
+
+.btn-primary{
+    background-color: #C2A097 !important;
+    color: #fff !important;
+    border: none;
+}
+.text-gray{
+    color: #969696 !important;
+}
+.btn-primary:focus{
+    box-shadow: none !important;
+    border: #9b8e8a !important;
+}
+
+.form-control:focus{
+    box-shadow: none !important;
+    border: 1px solid #a1847f !important;
+}
+
+.form-check-input:focus{
+    box-shadow: none !important;
+}
+
+.btn{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 24px;
+    padding: .450rem 1rem;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+body{
+    min-height: 100vh;
+}
+
+main{
+    height: calc(100vh - 61px);
+    min-height: 1000px;
+}
+
+.input-group input[type=text],
+.input-group input[type=password]{
+    border-right: none !important;
+}
+
+.input-group-text {
+    background-color: #fff;
+}
+
+.form-check-input:checked {
+    background-color: #288597 !important;
+    border-color: #288597 !important;
+}
+
+footer{
+    background-color: #414141;
+}
+
+footer a{
+    color: rgba(255, 255, 255, .8);
+    text-decoration: none;
+}
+
+.f-gothic{
+    font-family: 'Century Gothic Regular';
+}
+
+.f-18{
+    font-size: 18px;
+}
+
+footer .nav-menu{
+    margin-top: 20px;
+}
+
+footer .nav-menu .nav-menu-item{
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+
+footer .nav-menu a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+#value-upload{
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 500px){
+    main{
+        height: calc(100vh - 61px);
+        min-height: 800px;
+    }
+}

@@ -206,3 +206,24 @@ $('.toggle-eye').on('click', function () {
         $('#wachtwoord').attr('type', 'password');
     }
 })
+
+let file = $('#file-upload');
+$('.box-upload').on('click', function () {
+    file.click();
+})
+
+$(file).on('change', function (e) {
+    let val = $(this).val();
+    val = val.replace("fakepath", "")
+    val = val.replace("C:", "")
+    val = val.replace("\\", "")
+    val = val.replace("\\", "")
+    
+    if (val === "") {
+        $('#value-upload').html("PDF, WORD, JPEG")
+        $('#has-selected').html('UPLOAD DOCUMENT')
+    } else {
+        $('#value-upload').html(val)
+        $('#has-selected').html('HAS SELECTED')
+    }
+})
