@@ -1,6 +1,10 @@
 .sidebar-menu-item{
     margin-bottom: 10px;
 }
+a {
+    text-decoration: none !important;
+    color: inherit;
+}
 
 h4{
     font-family: 'Century Gothic Bold';
@@ -136,4 +140,95 @@ footer{
     height: 200px;
     border-radius: 4px;
     border: 1px dashed #C7C8C7;
+}
+.welcome__message {
+    font-size: 24px;
+    font-family: 'Century Gothic Regular';
+    letter-spacing: .3px;
+    line-height: 22px;
+}
+.sub-title {
+    font-size: 1rem;
+    font-family: 'Century Gothic Regular';
+    letter-spacing: .3px;
+    line-height: 22px;
+    color: #9B9B9B;
+}
+.sub-title > img {
+    display: inline-block;
+    margin-left: 5px;
+    width: 8px;
+}
+.date-wrapper {
+    font-family: 'Century Gothic Regular';
+    letter-spacing: 0;
+    line-height: 20px;
+    font-size: 16px;
+}
+.date-wrapper .date {
+    margin-left: 2rem !important;
+    margin-right: 2rem !important;
+    color: white;
+    padding: 10px 8px;
+    background-color: #D1B6AF;
+    width: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+.time-wrapper {
+    /* margin-top:.5rem; */
+}
+.time-wrapper span {
+    font-size: 16px;
+    color: #8C8C8C;
+    line-height: 20px;
+    display: block;
+    padding: 15px 0;
+}
+.time-item:first-child{
+    padding: 0;
+}
+.time-item {
+    border-bottom: 1px solid #C7C7C7;
+    height: 50px;
+}
+.time-item:first-child{
+    margin-top: -25px;
+}
+.active-event .time-item {
+    background-color: #D1B6AF;
+    border-bottom: 1px solid #D1B6AF;
+}
+.active-event .time-item:last-child {
+    background-color: transparent;
+}
+.event-wrapper {
+    padding: 0 40px;
+}
+.event-wrapper .active-event {
+    position: relative;
+    margin-top: 25px;
+    background-color: #D1B6AF;
+    border-bottom: 1px solid #D1B6AF;
+}
+.event-wrapper .active-event-wrapper {
+    position: absolute;
+    top: calc(50% - 10.5px);
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Century Gothic Regular';
+    color: white;
+}
+.event-wrapper .active-event-wrapper span:nth-child(1) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.event-wrapper .active-event-wrapper span:nth-child(2) {
+    position: absolute;
+    right: 5%;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
 }

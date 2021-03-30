@@ -150,6 +150,11 @@ footer .nav-menu a:hover{
     overflow: hidden;
 }
 
+.px-6 {
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+}
+
 @media screen and (max-width: 500px){
     main{
         height: calc(100vh - 61px);
