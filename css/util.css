@@ -7,6 +7,18 @@ h5{
     font-style: normal;
 }
 
+.bg-soft{
+    background-color: #F8F6F4 !important;
+}
+
+a:hover{
+    color: #969696;
+}
+
+form label{
+    margin-bottom: 8px;
+}
+
 .w100{
     width: 100px;
 }
@@ -37,8 +49,44 @@ h5{
     background-color: #9B9B9B;
 }
 
+th{
+    color: #9B9C99;
+    font-weight: normal;
+    border-bottom: 1px solid #9B9C99;
+}
+
+td{
+    font-size: 15px;
+    font-weight: normal;
+    padding-top: 20px !important;
+}
+
+td a{
+    color: #000;
+}
+
+td a:hover{
+    color: inherit;
+}
+
+tbody tr:nth-last-child(1){
+    border-bottom: none !important;
+}
+
+tbody tr:nth-last-child(1) td{
+    border-bottom: none !important;
+}
+
 .text-primary{
     color: #C2A097 !important;
+}
+
+.text-grey{
+    color: #8C8C8C !important;
+}
+
+.text-black{
+    color: #3C3C3C !important;
 }
 
 .btn-outline-primary{
@@ -95,7 +143,7 @@ body{
 }
 
 main{
-    height: calc(100vh - 61px);
+    /* height: calc(100vh - 61px); */
     min-height: 1000px;
 }
 
@@ -144,20 +192,88 @@ footer .nav-menu a:hover{
     text-decoration: none;
 }
 
+footer .row > div{
+    text-align: left !important;
+    margin-bottom: 30px;
+}
+
+footer .nav-menu{
+    text-align: left !important;
+}
+
 #value-upload{
     max-width: 200px;
     white-space: nowrap;
     overflow: hidden;
 }
 
-.px-6 {
-    padding-left: 4rem !important;
-    padding-right: 4rem !important;
+aside .bg-sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(0,0,0,.9);
+    height: 100vh;
+    width: 100%;
+    z-index: 1000;
+    transition: all .3s ease;
+}
+
+aside .bg-sidebar.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.sidebar-toggle{
+
+}
+
+.close-sidebar{
+    display: none;
+}
+
+@media screen and (max-width: 992px){
+    aside .nav-menu{
+        z-index: 10000000000000000000;
+        position: fixed;
+        top: 0;
+        z-index: 10000;
+        visibility: hidden;
+        opacity: 0;
+        left: -100%;
+        width: 100%;
+        max-width: 300px;
+        padding: 20px;
+        padding-top: 20px;
+        height: 100vh;
+        min-height: 500px;
+        background-color: #fff;
+        text-align: left !important;
+        transition: all .3s ease;
+    }
+    .close-sidebar{
+        margin-left: auto !important;
+        display: block;
+    }
+    aside .nav-menu.active{
+        left: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+    .px-6 {
+        padding-left: 4rem !important;
+        padding-right: 4rem !important;
+    }
 }
 
 @media screen and (max-width: 500px){
+    #dash{
+        margin-top: 50px;
+    }
     main{
-        height: calc(100vh - 61px);
+        /* height: calc(100vh - 61px); */
         min-height: 800px;
     }
 }
+

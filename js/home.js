@@ -239,3 +239,18 @@ $(document).click(function(event) {
         $('.date-overlay').removeClass('open');
     }        
 });
+
+$('.sidebar-toggle').on('click', function(){
+    $('aside .nav-menu').toggleClass('active')
+    $('aside .bg-sidebar').toggleClass('active')
+})
+
+$('aside .bg-sidebar').on('click', function () {
+    $('aside .nav-menu').removeClass('active')
+    $('aside .bg-sidebar').removeClass('active')
+})
+
+$('.close-sidebar').on('click', function () {
+    $('aside .nav-menu').removeClass('active')
+    $('aside .bg-sidebar').removeClass('active')
+})
