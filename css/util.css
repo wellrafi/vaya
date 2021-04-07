@@ -7,6 +7,14 @@ h5{
     font-style: normal;
 }
 
+.bg-soft{
+    background-color: #F8F6F4 !important;
+}
+
+a:hover{
+    color: #969696;
+}
+
 form label{
     margin-bottom: 8px;
 }
@@ -199,11 +207,37 @@ footer .nav-menu{
     overflow: hidden;
 }
 
+aside .bg-sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(0,0,0,.9);
+    height: 100vh;
+    width: 100%;
+    z-index: 1000;
+    transition: all .3s ease;
+}
+
+aside .bg-sidebar.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.sidebar-toggle{
+
+}
+
+.close-sidebar{
+    display: none;
+}
+
 @media screen and (max-width: 992px){
     aside .nav-menu{
+        z-index: 10000000000000000000;
         position: fixed;
         top: 0;
-        left: 0;
         z-index: 10000;
         visibility: hidden;
         opacity: 0;
@@ -211,11 +245,21 @@ footer .nav-menu{
         width: 100%;
         max-width: 300px;
         padding: 20px;
-        padding-top: 70px;
+        padding-top: 20px;
         height: 100vh;
         min-height: 500px;
         background-color: #fff;
         text-align: left !important;
+        transition: all .3s ease;
+    }
+    .close-sidebar{
+        margin-left: auto !important;
+        display: block;
+    }
+    aside .nav-menu.active{
+        left: 0;
+        opacity: 1;
+        visibility: visible;
     }
     .px-6 {
         padding-left: 4rem !important;

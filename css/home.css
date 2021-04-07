@@ -843,6 +843,12 @@ footer .right__side * {
 .sidebar__content__wrapper > .item__wrapper > * {
   flex-grow: 1;
 }
+
+.bg-soft{
+  background-color: #F8F6F4 !important;
+}
+
+
 .sidebar__content__wrapper > .item__wrapper > .item__desc > .title {
   font-size: 16px;
   font-family: 'Century Gothic Bold';

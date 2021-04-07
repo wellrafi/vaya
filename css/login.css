@@ -6,6 +6,11 @@
     padding: 10px 0px;
 }
 
+.bg-soft{
+    background-color: #F8F6F4 !important;
+}
+
+
 .auth-form label{
     margin-bottom: 8px;
 }
