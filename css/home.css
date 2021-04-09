@@ -37,7 +37,7 @@ body {
 }
 .header__section {
   padding: 10px 0;
-  background-color: white;
+  background-color: #F8F6F4;
   border-bottom: 0.5px solid #dddedd;
 }
 .header__section #right__side > div {
@@ -68,6 +68,14 @@ body {
   color: white;
   text-decoration: none;
 }
+
+.header__section #right__side > a.btn__outline {
+  background-color: transparent;
+  border: 1px solid #d1b6af;
+  color: #000;
+  text-decoration: none;
+}
+
 .header__section #right__side > .price__value {
   border: 1px solid #d1b6af;
 }

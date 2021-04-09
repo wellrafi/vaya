@@ -163,11 +163,20 @@ main{
 
 footer{
     background-color: #414141;
+    padding-bottom: 0px !important;
 }
 
 footer a{
     color: rgba(255, 255, 255, .8);
     text-decoration: none;
+}
+
+footer h6{
+    text-align: right;
+}
+
+footer .nav-menu-item{
+    text-align: right;
 }
 
 .f-gothic{
