@@ -1,3 +1,11 @@
+a {
+  color: inherit;
+  text-decoration: none !important;
+}
+a:hover {
+  color: inherit;
+}
+
 html::-webkit-scrollbar {
   width: 0 !important;
 }
@@ -276,12 +284,16 @@ footer {
   background-color: #d1b6af;
 }
 .time__lists__wrapper {
-  /* display: flex; */
+  display: flex;
   flex-wrap: wrap;
-  padding: 27px;
+  padding: 0;
+  /* when active */
+  /* padding: 27px; */
   padding-top: 25px;
   margin: 0 auto;
-  display: none;
+  overflow: hidden;
+  height: 0px;
+  transition: .5s;
 }
 .time__lists__wrapper .time__item {
   flex: 0 1 calc(33.33% - 10px);
@@ -364,6 +376,10 @@ footer {
 footer .right__side * {
   display: inline-block;
 }
+#generate_cost {
+  visibility: hidden;
+  transition: .4s;
+}
 .total__price {
   font-size: 12px;
   font-weight: 700;
@@ -375,7 +391,9 @@ footer .right__side * {
   font-size: 14px;
   line-height: 26px;
   letter-spacing: 0;
-  /* display: none; */
+  overflow: hidden;
+  height: 0;
+  transition: .3s;
 }
 
 .show__package {
@@ -582,6 +600,8 @@ footer .right__side * {
   border-radius: 4px;
   padding: 25px 20px;
   margin: 25px 0;
+  box-shadow: 0 0 2px rgb(0 0 0 / 20%);
+  border: 1px solid #C7C8C7;
 }
 .pricing__wrapper > .pricing__box > .pricing__title {
   font-size: 20px;
@@ -865,6 +885,10 @@ footer .right__side * {
   font-size: 12px;
 }
 
+.title__wrapper > .title__link {cursor: pointer;}
+.payment__input__wrapper > .link {cursor: pointer;}
+
+
 @media screen and (max-width: 576px){
   .mobile__menu__expand {display: inline-block !important;}
   .header__section .btn__login,
@@ -883,6 +907,16 @@ footer .right__side * {
   .active__timeline .circle {
     margin-top: 15px;
     margin-right: 20px;
+  }
+  .timeline__wrapper > .timeline__item > .circle {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .timeline__text__wrapper > .timeline__title {
+    font-size: 18px !important;
+  }
+  .timeline__text__wrapper > .timeline__subtitle {
+    font-size: 18px !important;
   }
 }
 @media screen and (max-width: 991px){
@@ -925,11 +959,31 @@ footer .right__side * {
     font-size: 14px;
   }
   .pricing__box > .pricing__btn {font-size: 10px;}
+  .timeline__text__wrapper > .timeline__title {
+    font-size: 15px;
+  }
+  .timeline__text__wrapper > .timeline__subtitle {font-size: 14px;}
+  .timeline__wrapper > .timeline__item > .circle {
+    width: 30px;
+    height: 30px;
+  }
 }
 @media (max-width: 1200px) {
   .pricing__container {
     max-width: 1100px;
   }
+}
+@media (max-width: 1199px) {
+  .timeline__text__wrapper > .timeline__subtitle {
+    font-size: 12px;
+  }
+  .timeline__text__wrapper > .timeline__title {
+    font-size: 13px;
+  }
+  .timeline__wrapper > .timeline__line {
+    margin: auto 0;
+    margin-right: 15px;
+}
 }
 @media screen and (max-width: 465px){
   .payment__inputbox__wrapper > .input__box__wrapper > .payment__input__wrapper {

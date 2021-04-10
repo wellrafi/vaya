@@ -12,12 +12,24 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 <link rel="stylesheet" href="./fonts/style.css">
 <link rel="stylesheet" href="./css/home.css">
+
+<style>
+    .timeline__wrapper > .timeline__line {
+        width: 135px;
+        height: 0;
+        border: 1px solid #c7c7c7;
+        margin: auto;
+        margin-left: 0;
+        margin-right: 25px;
+    }
+</style>
+
 <body style="background-color: #f4f4f4;">
     <div class="hidden__menu">
         <div class="container">
             <div class="menu__list">
-                <span class="item">LOG IN</span>
-                <span class="item">SIGN UP</span>
+                <span class="item"><a href="#">LOG IN</a></span>
+                <span class="item"><a href="#">REGISTREER</a></span>
             </div>
         </div>
     </div>
@@ -55,8 +67,8 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-11 text-end" id="right__side">
                     <!-- <div class="btn__header price__value">€XX,XX</div> -->
-                    <div class="btn__header btn__login">LOG IN</div>
-                    <div class="btn__header btn__signup">SIGN UP</div>
+                    <div class="btn__header btn__login"><a href="#">LOG IN</a></div>
+                    <div class="btn__header btn__signup"><a href="#">REGISTREER</a></div>
                     <div class="mobile__menu__expand" status="hidden">
                         <img src="./images/menu.svg" alt="">
                     </div>
@@ -82,7 +94,7 @@
                                 <div class="circle"></div>
                                 <div class="timeline__text__wrapper">
                                     <div class="timeline__title">Details</div>
-                                    <div class="timeline__subtitle">Een overzicth</div>
+                                    <div class="timeline__subtitle">Een overzicht</div>
                                 </div>
                             </div>
                             <div class="item timeline__line"></div>
@@ -90,7 +102,7 @@
                                 <div class="circle active"></div>
                                 <div class="timeline__text__wrapper">
                                     <div class="timeline__title">Gegevens</div>
-                                    <div class="timeline__subtitle">Een overzicth</div>
+                                    <div class="timeline__subtitle">Een overzicht</div>
                                 </div>
                             </div>
                             <div class="item timeline__line"></div>
@@ -247,7 +259,7 @@
         <div class="container">
             <button class="footer__btn back__btn float-left">ANNULEREN</button>
             <div class="right__side float-end">
-                <div class="footer__btn total__price">€XX,XX</div>
+                <!-- <div class="footer__btn total__price">€XX,XX</div> -->
                 <button class="footer__btn next__btn">VOLGENDE</button>
             </div>
         </div>

@@ -7,18 +7,18 @@ $('.tooltip__wrapper > .tooltip__btn').hover(function() {
 // calendar code
 var selected__day = new Date();
 const months = [
-    "january",
-    "february",
-    "march",
-    "april",
-    "may",
-    "june",
-    "july",
-    "august",
-    "september",
-    "october",
-    "november",
-    "december",
+    "Januari",
+    "Februari",
+    "Maart",
+    "April",
+    "Mei",
+    "Juni",
+    "Juli",
+    "Augustus",
+    "September",
+    "Oktober",
+    "November",
+    "December",
 ];
 function generate__calendar(date){
     const today = new Date(date);
@@ -43,12 +43,15 @@ function generate__calendar(date){
 
     $('.days__wrapper').html(days);
     $(".day__item").click(function() {
+        $("#date__value").trigger('change');
         const getClass = $(this).attr('class');
 
         const is__desc = $(".calendar__description__wrapper").css('display');
         if(is__desc !== 'none'){
-            $(".calendar__description__wrapper").hide();
-            $(".time__lists__wrapper").css('display' , 'flex');
+            $(".time__lists__wrapper").css({
+                'height' : 'auto',
+                'padding' : "27px"
+            });
         }
 
         if(!getClass.toString().includes('disable__day')){
@@ -72,6 +75,7 @@ $(".prev__month").click(function(){
 })
 
 $(".time__item").click(function() {
+    $("#start__time").trigger('change');
     $(".active__time__item").removeClass("active__time__item");
     const getData = $(this).text().replace(" " , '').split("-");
     $(this).addClass("active__time__item");

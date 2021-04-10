@@ -12,13 +12,25 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 <link rel="stylesheet" href="./fonts/style.css">
 <link rel="stylesheet" href="./css/home.css">
+
+<style>
+    .timeline__wrapper > .timeline__line {
+        width: 135px;
+        height: 0;
+        border: 1px solid #c7c7c7;
+        margin: auto;
+        margin-left: 0;
+        margin-right: 25px;
+    }
+</style>
+
 <body style="background-color: #f4f4f4;">
 
     <div class="hidden__menu">
         <div class="container">
             <div class="menu__list">
-                <span class="item">LOG IN</span>
-                <span class="item">SIGN UP</span>
+                <span class="item"><a href="#">LOG IN</a></span>
+                <span class="item"><a href="#">REGISTREER</a></span>
             </div>
         </div>
     </div>
@@ -62,8 +74,8 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-11 text-end" id="right__side">
                     <!-- <div class="btn__header price__value">€XX,XX</div> -->
-                    <div class="btn__header btn__login">LOG IN</div>
-                    <div class="btn__header btn__signup">SIGN UP</div>
+                    <div class="btn__header btn__login"><a href="#">LOG IN</a></div>
+                    <div class="btn__header btn__signup"><a href="#">REGISTREER</a></div>
                     
                     <div class="mobile__menu__expand" status="hidden">
                         <img src="./images/menu.svg" alt="">
@@ -113,7 +125,7 @@
         
                         <div class="title__wrapper">
                             <div class="title float-left">Contactgegevens</div>
-                            <span class="float-end title__link"><u>Heeft u al een account?</u></span>
+                            <span class="float-end title__link"><a href="#" style="text-decoration: underline !important;">Heeft u al een account?</a></span>
                         </div>
     
                         <div class="personal__input__box">
@@ -246,78 +258,6 @@
                                 <label for="phone__persoon2">Telefoonnummer</label>
                                 <input type="text" name="phone__persoon2" id="phone__persoon2" autocomplete="off" required>
                             </div>
-
-                            <div class="expand__wrapper"  id="expand_persoon2">
-                                <div class="input_pl_wrapper">
-                                    <label for="date__persoon2">24/06/1992</label>
-                                    <input type="text" name="date__persoon2" id="date__persoon2" autocomplete="off" required>
-                                </div>
-                                
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-12">
-                                        <div class="input_pl_wrapper">
-                                            <label for="company__persoon2">Bedrijf (optioneel)</label>
-                                            <input type="text" name="company__persoon2" id="company__persoon2" autocomplete="off">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12">
-                                        <div class="input_pl_wrapper">
-                                            <label for="btw__persoon2">BTW</label>
-                                            <input type="text" name="btw__persoon2" id="btw__persoon2" autocomplete="off">
-                                        </div>
-                                    </div>
-                                </div>
-        
-                                <div class="row">
-                                    <div class="col-lg-8 col-md-8 col-sm-12">
-                                        <div class="input_pl_wrapper">
-                                            <label for="street__persoon2">Straat en huisnummer</label>
-                                            <input type="text" name="street__persoon2" id="street__persoon2" autocomplete="off">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
-                                        <div class="input_pl_wrapper">
-                                            <label for="appartment__persoon2">Appartement nr. </label>
-                                            <input type="text" name="appartment__persoon2" id="appartment__persoon2" autocomplete="off">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-12">
-                                        <div class="input_pl_wrapper">
-                                            <label for="postcode__persoon2">Postcode</label>
-                                            <input type="text" name="postcode__persoon2" id="postcode__persoon2" autocomplete="off">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12">
-                                        <div class="input_pl_wrapper">
-                                            <label for="city__persoon2">Stad</label>
-                                            <input type="text" name="city__persoon2" id="city__persoon2" autocomplete="off">
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="input_pl_wrapper">
-                                    <label for="region__persoon2">Land / Regio</label>
-                                    <input type="text" name="region__persoon2" id="region__persoon2" autocomplete="off" required>
-                                </div>
-        
-                                <div class="input_pl_wrapper" style="margin-top: 30px;">
-                                    <label for="note__persoon2">Opmerking</label>
-                                    <textarea type="text" name="note__persoon2" id="note__persoon2" autocomplete="off" required></textarea>
-                                    <span class="info">max 200 woorden</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="expand__toggle">
-                            <span>
-                                <div class="expand__circle"></div>
-                                <div class="expand__circle"></div>
-                                <div class="expand__circle"></div>
-                            </span>
-                            <img src="./images/caret.svg" target="expand_persoon2" class="float-end expand__toggle__btn">
-                            <hr>
                         </div>
                     </div>
     
@@ -368,10 +308,10 @@
     <footer>
         <div class="container">
             <button class="footer__btn back__btn float-left">ANNULEREN</button>
-            <div class="right__side float-end">
+            <!-- <div class="right__side float-end">
                 <div class="footer__btn total__price">€XX,XX</div>
                 <button class="footer__btn next__btn">VOLGENDE</button>
-            </div>
+            </div> -->
         </div>
     </footer>
 </body>
