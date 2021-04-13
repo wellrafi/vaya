@@ -11,6 +11,10 @@ h5{
     background-color: #F8F6F4 !important;
 }
 
+.tijd-input{
+    max-height: 100px !important;
+}
+
 a:hover{
     color: #969696;
 }
@@ -286,3 +290,9 @@ aside .bg-sidebar.active{
     }
 }
 
+footer.stick{
+    position: fixed !important;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}

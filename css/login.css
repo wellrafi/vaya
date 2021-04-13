@@ -10,6 +10,10 @@
     background-color: #F8F6F4 !important;
 }
 
+main{
+    height: calc(100vh - 61px) !important;
+}
+
 
 .auth-form label{
     margin-bottom: 8px;

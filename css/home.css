@@ -5,6 +5,13 @@ html {
   overflow: -moz-scrollbars-none;
   -ms-overflow-style: none;
 }
+footer.stick{
+  position: fixed !important;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100000;
+}
 .pointer{
   cursor: pointer;
 }
@@ -36,6 +43,8 @@ body {
   background-color: #f4f4f4;
 }
 .header__section {
+  position: relative;
+  z-index: 100000;
   padding: 10px 0;
   background-color: #F8F6F4;
   border-bottom: 0.5px solid #dddedd;
@@ -240,7 +249,7 @@ input[type="radio"]:checked::after {
   left: 98%;
   top: 98%;
   width: 400px;
-  font-weight: 600;
+  font-weight: normal;
 }
 .information__tooltip {
   display: block;
@@ -389,6 +398,9 @@ footer .right__side * {
 }
 
 .checkout__details__wrapper {
+  position: fixed;
+  top: 0;
+  padding-top: 60px;
   background-color: white;
   height: 100%;
   /* width: 175%; */
@@ -546,11 +558,20 @@ footer .right__side * {
   z-index: 99;
   right: 0;
 }
+
+
 .container__contents {
   position: relative;
   z-index: 111;
-  min-height: 90vh;
+  height: 100%;
+  min-height: calc(100vh - 61px);
 }
+
+.container__contents > .row{
+  height: 100%;
+  padding-bottom: 50px;
+}
+
 .expand__wrapper {
   overflow: auto;
   width: 100%;
