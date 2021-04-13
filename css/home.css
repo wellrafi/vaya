@@ -20,6 +20,13 @@ footer.stick{
   width: 100%;
   z-index: 100000;
 }
+.header__section.stick{
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100000;
+}
 .pointer{
   cursor: pointer;
 }
@@ -264,6 +271,7 @@ input[type="radio"]:checked::after {
   margin-top: 10px;
   margin-bottom: -10px;
 }
+
 footer {
   /* margin-top: 200px; */
   position: relative;
